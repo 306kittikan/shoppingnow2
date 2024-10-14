@@ -37,13 +37,13 @@ const App = () => {
       <div className="container mx-auto p-4 bg-gray-100 min-h-screen">
         <nav className="bg-indigo-600 p-4 mb-8 rounded-lg">
           <div className="container mx-auto flex justify-between items-center">
-            <Link to="/" className="text-white text-2xl font-bold">ออนไลน์แฟชั่น</Link>
+            <Link to="/" className="text-white text-2xl font-bold">Online fashion Shop</Link>
             <div>
-              <Link to="/" className="text-white mr-4 hover:text-indigo-200">หน้าหลัก</Link>
-              <Link to="/products" className="text-white mr-4 hover:text-indigo-200">สินค้า</Link>
+              <Link to="/" className="text-white mr-4 hover:text-indigo-200">HomePage</Link>
+              <Link to="/products" className="text-white mr-4 hover:text-indigo-200">Product</Link>
               <Link to="/cart" className="text-white hover:text-indigo-200 flex items-center">
                 <ShoppingCart size={20} className="mr-1" />
-                ตะกร้าสินค้า ({cart.reduce((sum, item) => sum + item.quantity, 0)})
+                Shopping Cart ({cart.reduce((sum, item) => sum + item.quantity, 0)})
               </Link>
             </div>
           </div>

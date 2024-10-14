@@ -6,8 +6,8 @@ const Cart = ({ cart, removeFromCart, updateQuantity }) => {
   const [appliedDiscount, setAppliedDiscount] = useState(0);
 
   const coupons = [
-    { code: 'SAVE10', discount: 0.1 },
-    { code: 'SAVE20', discount: 0.2 },
+    { code: 'SHOPPING10', discount: 0.1 },
+    { code: 'SHOPPING20', discount: 0.2 },
   ];
 
   const applyCoupon = () => {
@@ -28,7 +28,7 @@ const Cart = ({ cart, removeFromCart, updateQuantity }) => {
 
   return (
     <div className="bg-white rounded-lg shadow-md p-6">
-      <h2 className="text-2xl font-semibold mb-4 text-indigo-600">ตะกร้าสินค้า</h2>
+      <h2 className="text-2xl font-semibold mb-4 text-indigo-600">Shopping Cart</h2>
       {cart.length === 0 ? (
         <p className="text-gray-500">ไม่มีสินค้าในตะกร้า</p>
       ) : (

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ShoppingCart, Star } from 'lucide-react';
 
+
 // เพิ่มคะแนนเริ่มต้นให้กับสินค้า
 const products = [
   { id: 1, name: 'เสื้อยืด', price: 250, image: 'https://i.pinimg.com/236x/6d/53/ac/6d53acc61e6e0ad8d496a801f2312739.jpg', category: 'เสื้อผ้า', rating: 4.5, ratingCount: 10 },
@@ -39,7 +40,7 @@ const ProductList = ({ addToCart, onRate }) => {
 
   return (
     <div>
-      <h2 className="text-2xl font-semibold mb-4 text-indigo-600">สินค้าของเรา</h2>
+      
       <div className="mb-6">
         <h3 className="text-lg font-semibold mb-2">หมวดหมู่:</h3>
         <div className="flex flex-wrap gap-2">
